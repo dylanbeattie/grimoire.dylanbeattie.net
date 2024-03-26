@@ -5,6 +5,12 @@ layout: home
 ---
 # {{ page.title }}
 
+## Preflight check for recording meetups
+
+- [ ] Microphones: set gain on Anker receiver to +6
+- [ ] Microphones: line of sight between mics and receiver - receiver can't be "backstage"
+- [ ] Microphones: remember to press record on the receiver!
+
 ## Scale Factors for Video Frame Sizes
 
 |           | 1920px | 1080px | 1280px | 720px |
