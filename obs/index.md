@@ -2,8 +2,9 @@
 title: OBS Studio
 layout: home
 # has_children: true
-typora-root-url: ./../images/obs/
-typora-copy-images-to: ./../images/obs
+
+typora-copy-images-to: ./images
+typora-root-url: ./../
 ---
 # {{ page.title }}
 
@@ -11,7 +12,9 @@ typora-copy-images-to: ./../images/obs
 
 For perfect wallpaper blending, PowerPoint slide background should be a 1920x1080 render of the 1680x945 crop area of the canvas wallpaper.
 
-![talking-head-with-slides-layout](/talking-head-with-slides-layout.png)
+![talking-head-with-slides-layout](/obs/images/talking-head-with-slides-layout.png)
+
+
 
 ## Preflight check for recording meetups
 
@@ -52,3 +55,21 @@ For perfect wallpaper blending, PowerPoint slide background should be a 1920x108
 |0.25|  1/4 |960|540|480|270|320|256|180|
 |0.225|  9/40|864|486|432|243|288|230.4|162|
 |0.2|  1/5 |768|432|384|216|256|204.8|144|
+
+Microphone settings for YouTube videos
+
+Yeti stereo microphone over USB.
+
+
+
+1. Adjust the physical mic: gain to 100%, pattern to cardiod:
+   ![yeti-volume-settings-small](/obs/images/index/yeti-volume-settings-small-1712791911729-11.jpg)
+
+2. Set recording level in Windows audio settings to 50%:
+
+   ![image-20240411002851295](/obs/images/index/image-20240411002851295.png)
+
+3. Adjust levels in OBS until shouting/clapping into the mic just clips the top of the red.
+
+4. Add compression using default settings.
+
