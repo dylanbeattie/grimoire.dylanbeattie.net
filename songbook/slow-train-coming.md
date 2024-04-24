@@ -9,7 +9,7 @@ layout: home
 Intro: G D A   G D A
 
          G      D       A
-From the moment I first saw you
+From the moment I first  saw you
        G        D        A
 I knew I should turn and run
       G          D       A
@@ -39,13 +39,13 @@ Lord I know there's a
 Heartache closing in on me
 A                    
 My hearts tied down 
-G                    D
+G                    A
 To these tracks now
                  G        D
 I can't seem to break it free
 C               D
 Baby your sweet lovin'
-          C    D      C+
+          C    D      A
 Is like a slow train comin'
 
        G        D     A
@@ -59,9 +59,8 @@ It's gonna hurt me either way
 
               G       D      A
 Bridge: I can see the end in sight
-    G          D        A
+    G          D        E7
 But I'll just close my eyes
-
 
             A                D
 Chorus: I can hear it rollin' 
@@ -71,13 +70,13 @@ Lord I know there's a
 Heartache closing in on me
 A                    
 My hearts tied down 
-G                    D
+G                    A
 To these tracks now
                  G        D
 I can't seem to break it free
 C               D
 Baby your sweet lovin'
-          C    D     C++++
+          C    D     A
 Is like a slow train comin'
 
          C                      D
@@ -86,14 +85,15 @@ Oh you'd think by now that I'd learned my lesson
 But it feels so right that I keep forgettin'
 
                         
-  A                D
-Chorus: I can hear it rollin' 
+      A                D
+I can hear it rollin' 
                        A
 Lord I know there's a 
                   G     D 
 Heartache closing in on me
+
 A                    
-My hearts tied down 
+My heart's tied down 
 G                    D
 To these tracks now
                  G        D
