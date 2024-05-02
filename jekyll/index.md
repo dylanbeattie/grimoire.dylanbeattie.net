@@ -34,3 +34,36 @@ The problem is the line you need to add is *actually*:
 gem 'wdm', '>= 0.1.0', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ```
 
+## cannot load such file -- webrick
+
+Running `bundle exec jekyll serve` produces:
+
+```
+C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-
+4.0.1/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/commands/serve/servlet.rb:3:in `<top (required)>'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:179:in `require_relative'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:179:in `setup'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:100:in `process'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in `block in process_with_graceful_fail'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in `each'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in `process_with_graceful_fail'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:86:in `block (2 levels) in init_with_program'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `block in execute'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `each'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in `execute'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/mercenary-0.3.6/lib/mercenary/program.rb:42:in `go'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/mercenary-0.3.6/lib/mercenary.rb:19:in `program'
+        from C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/jekyll-4.0.1/exe/jekyll:15:in `<top (required)>'
+        from C:/Ruby31-x64/bin/jekyll:25:in `load'
+        from C:/Ruby31-x64/bin/jekyll:25:in `<main>'
+```
+
+At some point `webrick` became an external dependency, so needs to be explicitly added to the `Gemfile`:
+
+```
+gem "webrick"
+```
+
+
+
