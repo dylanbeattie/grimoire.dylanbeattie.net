@@ -73,3 +73,17 @@ Yeti stereo microphone over USB.
 
 4. Add compression using default settings.
 
+### Recording Greenscreens
+
+Canon EOS, Manual movie mode:
+
+shutter speed 1/50 second (I have no idea whether this works because it's 50FPS or what)
+
+F8.0, film speed 640
+
+White balance: set the Keylights to 5500K and the camera white balance to the same.
+
+
+
+![image-20240522132041677](/obs/images/index/image-20240522132041677.png)
+
