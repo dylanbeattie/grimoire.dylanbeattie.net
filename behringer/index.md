@@ -6,4 +6,4 @@ typora-root-url: ./../
 ---
 Notes for doing stuff with Behringer XR16 wireless mixing gadget
 
-![](samsung-galaxy-lock-screen.jpg)
+![Samsung Galaxy lock screen](samsung-galaxy-lock-screen.jpg)
