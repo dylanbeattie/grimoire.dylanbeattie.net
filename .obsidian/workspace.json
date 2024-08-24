@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/index.md",
+                "file": "vba/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/index.md",
+                "file": "vba/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/index.md",
+                "file": "vba/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tools/index.md"
+                "file": "vba/index.md"
               }
             }
           }
@@ -133,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -146,9 +146,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acc2e001410966d0",
+  "active": "bab2ec9724ad5d8e",
   "lastOpenFiles": [
+    "obs/index.md",
+    "vba/index.md",
     "tools/index.md",
+    "vba",
     "tools"
   ]
 }
