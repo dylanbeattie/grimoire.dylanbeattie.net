@@ -146,8 +146,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bab2ec9724ad5d8e",
+  "active": "acc2e001410966d0",
   "lastOpenFiles": [
+    "_site/images/samsung-galaxy-lock-screen.jpg",
+    "_site/tools/index.html",
+    "_site/tools",
+    "_site/autohotkey/index.html",
+    "_site/autohotkey",
+    "_site/vscode/index.html",
+    "_site/vscode",
+    "_site/vba/index.html",
+    "_site/vba",
+    "_site/behringer/index.html",
+    "_site/behringer",
     "peg/index.md",
     "autohotkey/index.md",
     "README.md",
@@ -155,14 +166,10 @@
     "index.md",
     "guitars.md",
     "vscode/index.md",
-    "autohotkey",
     "tools/index.md",
     "vba/index.md",
     "behringer/index.md",
-    "behringer",
     "images/samsung-galaxy-lock-screen.jpg",
-    "obs/index.md",
-    "vba",
-    "tools"
+    "obs/index.md"
   ]
 }
