@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "autohotkey/index.md",
+                "file": "vscode/index.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "autohotkey/index.md",
+                "file": "vscode/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "autohotkey/index.md",
+                "file": "vscode/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "autohotkey/index.md"
+                "file": "vscode/index.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "bab2ec9724ad5d8e",
   "lastOpenFiles": [
-    "peg/index.md",
     "autohotkey/index.md",
+    "peg/index.md",
     "index.md",
     "autohotkey",
     "tools/index.md",

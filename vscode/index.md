@@ -3,7 +3,7 @@ title: "VS Code"
 layout: home
 has_children: true
 ---
-VS Code stuff
+# Visual Studio Code
 
 ### Color Customisations
 
