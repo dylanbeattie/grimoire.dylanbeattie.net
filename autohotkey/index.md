@@ -41,4 +41,17 @@ WaitForRightArrow() {
 }
 ```
 
-Here's the script that hooks into 
+Here's the script that listens for Ctrl-S and if the active window has "autohotkey" in the title (i.e. you're in VS code editing something in the `/autohotkey` folder/workspace) it'll reload the active script, and beep to let you know it worked:
+
+```autohotkey
+~^s::
+{
+    If WinActive("autohotkey") {
+        SoundBeep
+        Sleep 200      
+        Reload
+        SoundPlay "*16"
+    }
+    return
+}
+```
