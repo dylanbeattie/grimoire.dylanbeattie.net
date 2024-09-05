@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "vscode/index.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": true
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "vscode/index.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "vscode/index.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "vscode/index.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,9 +148,13 @@
   },
   "active": "bab2ec9724ad5d8e",
   "lastOpenFiles": [
+    "recording-presentations.md",
+    "README.md",
+    "index.md",
+    "guitars.md",
+    "vscode/index.md",
     "autohotkey/index.md",
     "peg/index.md",
-    "index.md",
     "autohotkey",
     "tools/index.md",
     "vba/index.md",
