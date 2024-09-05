@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "behringer/index.md",
+                "file": "autohotkey/index.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "behringer/index.md",
+                "file": "autohotkey/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "behringer/index.md",
+                "file": "autohotkey/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "behringer/index.md"
+                "file": "autohotkey/index.md"
               }
             }
           }
@@ -148,12 +148,16 @@
   },
   "active": "bab2ec9724ad5d8e",
   "lastOpenFiles": [
+    "peg/index.md",
+    "autohotkey/index.md",
+    "index.md",
+    "autohotkey",
+    "tools/index.md",
     "vba/index.md",
     "behringer/index.md",
     "behringer",
     "images/samsung-galaxy-lock-screen.jpg",
     "obs/index.md",
-    "tools/index.md",
     "vba",
     "tools"
   ]

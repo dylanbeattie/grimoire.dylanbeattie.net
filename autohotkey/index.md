@@ -1,5 +1,5 @@
 ---
-title: Parsing Expression Grammars
+title: AutoHotkey
 layout: home
 ---
 # {{ page.title }}
