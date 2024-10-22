@@ -9,17 +9,17 @@
 			font-family: Arial, Helvetica, sans-serif;
 		}
 
-		img#preview {
+		img {
 			width: 800px;
-			height: 800px;
+			height: 400px;
 			position: absolute;
+		}
+
+		img#preview {
 			z-index: 1;
 		}
 
-		img#overlay {
-			width: 800px;
-			height: 800px;
-			position: absolute;
+		img.overlay {
 			z-index: 2;
 		}
 
@@ -36,7 +36,8 @@
 <body>
 	<fieldset id="overlays-fieldset">
 		<legend>BlueSky Banner Checker</legend>
-		<p>BlueSky banner images should be 2048x2048px,
+		<p>So as far as I can tell from MANY experiments,
+			the optimum size for BlueSky banner images is 2048 x 1024px,
 			but only the central 2048x512px area will render,
 			and the exact area varies by device and resolution.</p>
 		<label for="preview-image">Preview Image:</label><br />
@@ -47,7 +48,6 @@
 	</fieldset>
 	<div id="images">
 		<img id="preview" src="bluesky-banner-preview.png" />
-		<img id="overlay" />
 	</div>
 	<script>
 		var overlays = {
@@ -56,24 +56,35 @@
 			"iphone-13-large-text.png": "iPhone 13 (large text)",
 			"iphone-16-pro-max.png": "iPhone 16 Pro Max",
 			"pixel-7a.png": "Pixel 7a",
+			"pixel-6.png": "Pixel 6",
 			"samsung-galaxy-a9.png": "Samsung Galaxy A9"
 		};
 		var fieldset = document.getElementById('overlays-fieldset');
+		var images = document.getElementById('images');
 		for (var filename of Object.keys(overlays)) {
 			var label = document.createElement("label");
 			label.innerHTML = overlays[filename];
-			var radio = document.createElement("input");
-			radio.type = "radio";
-			radio.name = "overlay";
-			radio.value = filename;
-			label.prepend(radio);
+			var checkbox = document.createElement("input");
+			checkbox.type = "checkbox";
+			checkbox.name = "overlay";
+			checkbox.value = filename;
+			label.prepend(checkbox);
 			fieldset.appendChild(label);
-			radio.addEventListener("change", updateOverlay.bind(radio));
+			checkbox.addEventListener("change", updateOverlay.bind(checkbox));
+			var overlay = document.createElement("img");
+			overlay.className = "overlay";
+			overlay.src = filename;
+			overlay.id = filename;
+			overlay.style.visibility = "hidden";
+			// overlay.style.opacity = "90%";
+			images.append(overlay);
 		}
 
 		function updateOverlay(evt) {
-			document.getElementById('overlay').src = evt.target.value;
+			document.getElementById(evt.target.value).style.visibility
+				= (evt.target.checked ? "visible" : "hidden");
 		}
+
 		function updatePreview(input, target) {
 			let file = input.files[0];
 			let reader = new FileReader();
