@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>BlueSky Banner</title>
+	<style>
+		body {
+			display: flex;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		img#preview {
+			width: 800px;
+			height: 800px;
+			position: absolute;
+			z-index: 1;
+		}
+
+		img#overlay {
+			width: 800px;
+			height: 800px;
+			position: absolute;
+			z-index: 2;
+		}
+
+		fieldset {
+			max-width: 200px;
+		}
+
+		label {
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<fieldset id="overlays-fieldset">
+		<legend>BlueSky Banner Checker</legend>
+		<p>BlueSky banner images should be 2048x2048px,
+			but only the central 2048x512px area will render,
+			and the exact area varies by device and resolution.</p>
+		<label for="preview-image">Preview Image:</label><br />
+		<input id="preview-image" type="file" name="banner" accept="image/*"
+			onchange="updatePreview(this, 'preview');" /><br />
+		<hr />
+		<h4>Device Preview:</h4>
+	</fieldset>
+	<div id="images">
+		<img id="preview" src="bluesky-banner-preview.png" />
+		<img id="overlay" />
+	</div>
+	<script>
+		var overlays = {
+			"chrome-windows-150pct.png": "Chrome Windows 150%",
+			"chrome-windows-200pct.png": "Chrome Windows 200%",
+			"iphone-13-large-text.png": "iPhone 13 (large text)",
+			"iphone-16-pro-max.png": "iPhone 16 Pro Max",
+			"pixel-7a.png": "Pixel 7a",
+			"samsung-galaxy-a9.png": "Samsung Galaxy A9"
+		};
+		var fieldset = document.getElementById('overlays-fieldset');
+		for (var filename of Object.keys(overlays)) {
+			var label = document.createElement("label");
+			label.innerHTML = overlays[filename];
+			var radio = document.createElement("input");
+			radio.type = "radio";
+			radio.name = "overlay";
+			radio.value = filename;
+			label.prepend(radio);
+			fieldset.appendChild(label);
+			radio.addEventListener("change", updateOverlay.bind(radio));
+		}
+
+		function updateOverlay(evt) {
+			document.getElementById('overlay').src = evt.target.value;
+		}
+		function updatePreview(input, target) {
+			let file = input.files[0];
+			let reader = new FileReader();
+
+			reader.readAsDataURL(file);
+			reader.onload = function () {
+				let img = document.getElementById(target);
+				// can also use "this.result"
+				img.src = reader.result;
+			}
+		}
+	</script>
+</body>
+
+</html>
