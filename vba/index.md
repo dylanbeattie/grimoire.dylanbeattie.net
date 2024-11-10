@@ -45,7 +45,12 @@ For Each oSlide In oSlides
             End If
         End If
     Next
-    oSlide.NotesPage.Shapes(2).TextFrame.TextRange.Text = "THIS: " & ThisName
+    If ThisName <> "" Then
+        oSlide.NotesPage.Shapes(2).TextFrame.TextRange.Text = "THIS: " & ThisName
+        If oSlide.Shapes.HasTitle Then
+            oSlide.Shapes.Title.TextFrame.TextRange.Text = ThisName
+        End If
+    End If
     If Not LastSlide Is Nothing Then
         Set Notes = LastSlide.NotesPage.Shapes(2).TextFrame.TextRange
         Notes.Text = Notes.Text & vbNewLine & vbNewLine & "NEXT: " & ThisName
@@ -56,5 +61,6 @@ For Each oSlide In oSlides
 Next oSlide
 
 End Sub
+
 
 ```
